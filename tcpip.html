@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TCP/IP — Internet Terminology</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<nav id="sidebar">
+  <div id="sidebar-header">
+    <div class="logo">NetTerms<span>Internet Terminology</span></div>
+  </div>
+  <ul id="nav-list">
+    <li><a href="index.html"><span class="nav-num">00</span>All Terms</a></li>
+    <li class="nav-section">Core Concepts</li>
+<li><a href="www.html"><span class="nav-num">01</span>World Wide Web</a></li>
+<li><a href="tcp-ip.html"><span class="nav-num">02</span>TCP/IP</a></li>
+<li class="nav-section">Web Infrastructure</li>
+<li><a href="web-browsers.html"><span class="nav-num">03</span>Web Browsers</a></li>
+<li><a href="web-servers.html"><span class="nav-num">04</span>Web Servers</a></li>
+<li><a href="url.html"><span class="nav-num">05</span>URLs</a></li>
+<li><a href="dns.html"><span class="nav-num">06</span>DNS</a></li>
+<li><a href="http.html"><span class="nav-num">07</span>HTTP</a></li>
+<li class="nav-section">Network Types</li>
+<li><a href="intranet.html"><span class="nav-num">08</span>Intranet</a></li>
+<li><a href="extranet.html"><span class="nav-num">09</span>Extranet</a></li>
+<li class="nav-section">Architecture & Protocols</li>
+<li><a href="multitier.html"><span class="nav-num">10</span>Multitier Architecture</a></li>
+<li><a href="ftp.html"><span class="nav-num">11</span>FTP</a></li>
+<li><a href="html-term.html"><span class="nav-num">12</span>HTML</a></li>
+<li class="nav-section">Web Generations</li>
+<li><a href="web10.html"><span class="nav-num">13</span>Web 1.0</a></li>
+<li><a href="web20.html"><span class="nav-num">14</span>Web 2.0</a></li>
+<li><a href="web30.html"><span class="nav-num">15</span>Web 3.0</a></li>
+<li><a href="web40.html"><span class="nav-num">16</span>Web 4.0</a></li>
+
+  </ul>
+</nav>
+<button id="hamburger" aria-label="Toggle menu">☰</button>
+
+<div id="main">
+  <header id="topbar">
+    <div class="breadcrumb">NetTerms / <span>TCP/IP</span></div>
+    <div class="tag">PROTOCOL</div>
+  </header>
+
+  <div id="content">
+    
+<div class="term-hero">
+  <div class="term-acronym">// Term 02 — TCP/IP</div>
+  <h1 class="term-title">Transmission Control Protocol / <span class="highlight">Internet Protocol</span></h1>
+  <p class="term-subtitle">The foundational suite of communication protocols that governs how data is transmitted across interconnected networks — the backbone of the modern internet.</p>
+</div>
+
+<div class="term-image-block">
+  <img src="images/tcp-ip.svg" alt="TCP/IP Protocol Stack" onerror="this.src='images/placeholder.svg'" />
+  <div class="img-caption">// The TCP/IP four-layer model governing internet communication</div>
+</div>
+
+<div class="section">
+  <div class="section-label">Definition</div>
+  <p><strong>TCP/IP</strong> is a suite of communication protocols used to interconnect network devices on the internet. TCP defines how applications can create channels of communication across a network, while IP defines how to address and route each data packet so it arrives at the correct destination.</p>
+  <p>Developed in the 1970s by Vint Cerf and Bob Kahn, TCP/IP is often referred to as the "language of the internet." Every device on the internet uses TCP/IP to communicate.</p>
+</div>
+
+<div class="section">
+  <div class="section-label">The Four Layers</div>
+  <div class="cards-grid">
+    <div class="card"><div class="card-icon">📱</div><div class="card-title">Application Layer</div><div class="card-text">Protocols like HTTP, FTP, DNS, and SMTP that applications use to exchange data.</div></div>
+    <div class="card"><div class="card-icon">🔄</div><div class="card-title">Transport Layer</div><div class="card-text">TCP and UDP — manages end-to-end data delivery, ordering, and error correction.</div></div>
+    <div class="card"><div class="card-icon">🗺️</div><div class="card-title">Internet Layer</div><div class="card-text">IP — handles addressing, routing packets across different networks.</div></div>
+    <div class="card"><div class="card-icon">🔌</div><div class="card-title">Network Access</div><div class="card-text">Ethernet, Wi-Fi — physical transmission of data over the hardware medium.</div></div>
+  </div>
+</div>
+
+<div class="section">
+  <div class="section-label">TCP vs UDP</div>
+  <p><strong>TCP (Transmission Control Protocol)</strong> establishes a reliable, ordered connection. It guarantees that packets arrive, and in the correct sequence — essential for web pages, emails, and file downloads.</p>
+  <p><strong>UDP (User Datagram Protocol)</strong> is connectionless and faster but doesn't guarantee delivery. It's used for real-time applications like video calls and online gaming where speed matters more than perfect reliability.</p>
+</div>
+
+<div class="section">
+  <div class="section-label">IP Addressing</div>
+  <div class="code-block"><span class="comment">// IPv4 address example</span>
+<span class="keyword">IP Address:</span>  <span class="string">192.168.1.1</span>
+<span class="keyword">Subnet Mask:</span> <span class="string">255.255.255.0</span>
+<span class="keyword">Gateway:</span>     <span class="string">192.168.1.254</span>
+
+<span class="comment">// IPv6 address example</span>
+<span class="keyword">IPv6:</span> <span class="string">2001:0db8:85a3:0000:0000:8a2e:0370:7334</span></div>
+</div>
+
+<div class="highlight-box">
+  <div class="hb-label">Why It Matters</div>
+  <p>Without TCP/IP, the internet as we know it would not exist. It is the universal agreement that allows billions of diverse devices — smartphones, servers, IoT sensors — to communicate seamlessly across the globe.</p>
+</div>
+
+    <div class="page-footer-nav"><a href="www.html" class="footer-nav-btn prev"><span>←</span><div><span class="btn-label">Previous</span><span class="btn-title">World Wide Web</span></div></a><a href="web-browsers.html" class="footer-nav-btn next"><div><span class="btn-label">Next</span><span class="btn-title">Web Browsers</span></div><span>→</span></a></div>
+  </div>
+</div>
+
+<script src="js/nav.js"></script>
+</body>
+</html>
